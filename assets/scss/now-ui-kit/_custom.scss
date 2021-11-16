@@ -131,6 +131,7 @@
   background-color: transparent;
   border: 2px solid #e3e3e3;
   border-radius: 30px;
+  font-size: 1em;
   color: #000000;
   height: auto;
   line-height: normal;
@@ -576,6 +577,14 @@ textarea.form-control:active {
 .form-check-radio input[type="radio"]:disabled + .form-check-sign::before,
 .form-check-radio input[type="radio"]:disabled + .form-check-sign::after {
   color: #9a9a9a;
+}
+
+.form-control {
+  input[type="checkbox"] {
+    &::before {
+      background-color: #ffb721;
+    }
+  }
 }
 
 .text-black {
@@ -2862,6 +2871,11 @@ textarea.form-control:active {
 
 .contact-page label {
   font-size: 1.2em;
+
+  &.form-check-label {
+    font-size: 1em;
+    margin-top: 0.6em;
+  }
 }
 
 .contact-page p.description {
@@ -4489,9 +4503,7 @@ img {
   padding: 0;
   list-style: none;
 }
-.footer ul li {
-  display: inline-block;
-}
+
 .footer ul li a {
   color: inherit;
   padding: 0.5rem;

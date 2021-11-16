@@ -446,8 +446,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   border-radius: 3px;
   background: #FFF;
   cursor: default;
-  -webkit-box-shadow: inset 0 0 1px #FFF, inset 0 1px 7px #EBEBEB, 0 3px 6px -3px #BBB;
-          box-shadow: inset 0 0 1px #FFF, inset 0 1px 7px #EBEBEB, 0 3px 6px -3px #BBB;
+  -webkit-box-shadow: inset 0 0 1px #FFF, inset 0 1px 7px #EBEBEB, 0 3px 6px -3px #BBB;
+          box-shadow: inset 0 0 1px #FFF, inset 0 1px 7px #EBEBEB, 0 3px 6px -3px #BBB;
   -webkit-transition: 300ms ease 0s;
   -moz-transition: 300ms ease 0s;
   -ms-transition: 300ms ease 0s;
@@ -3173,6 +3173,11 @@ p {
   font-size: 1.2em;
 }
 
+li {
+  font-size: 1.2em;
+  margin-bottom: 14px;
+}
+
 .title {
   font-weight: 400;
   padding-top: 20px;
@@ -4980,8 +4985,8 @@ img {
 }
 
 .footer nav {
-  display: inline-block;
-  float: left;
+  display: inherit;
+  float: none;
 }
 
 .footer ul {
@@ -4992,6 +4997,8 @@ img {
 
 .footer ul li {
   display: inline-block;
+  font-size: 1em;
+  margin-bottom: 0;
 }
 
 .footer ul li a {
@@ -6933,11 +6940,12 @@ img {
   background-color: transparent;
   border: 2px solid #e3e3e3;
   border-radius: 30px;
+  font-size: 1em;
   color: #000000;
   height: auto;
   line-height: normal;
-  -webkit-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -7093,8 +7101,8 @@ img {
   border: 2px solid #e3e3e3;
   border-radius: 30px;
   color: #555555;
-  -webkit-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .input-group-focus .input-group-text {
@@ -7368,6 +7376,10 @@ textarea.form-control:active {
 .form-check-radio input[type="radio"]:disabled + .form-check-sign::before,
 .form-check-radio input[type="radio"]:disabled + .form-check-sign::after {
   color: #9a9a9a;
+}
+
+.form-control input[type="checkbox"]::before {
+  background-color: #ffb721;
 }
 
 .text-black {
@@ -9663,6 +9675,11 @@ textarea.form-control:active {
   font-size: 1.2em;
 }
 
+.contact-page label.form-check-label {
+  font-size: 1em;
+  margin-top: 0.6em;
+}
+
 .contact-page p.description {
   font-size: 1.2em;
   line-height: 1.4em;
@@ -11399,10 +11416,6 @@ img {
   margin-bottom: 0;
   padding: 0;
   list-style: none;
-}
-
-.footer ul li {
-  display: inline-block;
 }
 
 .footer ul li a {
