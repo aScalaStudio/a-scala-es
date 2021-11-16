@@ -7382,6 +7382,10 @@ textarea.form-control:active {
   background-color: #ffb721;
 }
 
+.form-control:focus {
+  border: 2px solid #ffb721;
+}
+
 .text-black {
   color: #444444;
 }
