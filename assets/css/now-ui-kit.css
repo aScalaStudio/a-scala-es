@@ -7220,7 +7220,12 @@ textarea.form-control {
   line-height: 2;
 }
 
-textarea.form-control:focus,
+textarea.form-control:focus {
+  border-left: none;
+  border-top: none;
+  border-right: none;
+}
+
 textarea.form-control:active {
   border-left: none;
   border-top: none;
@@ -11430,7 +11435,7 @@ img {
   text-decoration: none;
 }
 
-.footer ul li a:hover {
+.footer ul li:hover {
   text-decoration: none;
 }
 
